@@ -12,24 +12,24 @@ public class Program
         string x = Console.ReadLine();
 
         string[] arrString = SepararPorEspaco(x);
-        
+
         Console.WriteLine($"Maior palavra: {MaiorPalavra(arrString)}");
 
     }
 
-    public static string[] SepararPorEspaco ( string x )
+    public static string[] SepararPorEspaco(string x)
     {
         return x.Split(" ");
     }
 
-    public static string MaiorPalavra ( string[] array )
+    public static string MaiorPalavra(string[] array)
     {
         int tamanhoPalavra = 0;
         string maiorPalavra = string.Empty;
 
-        foreach ( var palavra in array)
+        foreach (var palavra in array)
         {
-            if ( palavra.Length > tamanhoPalavra )
+            if (palavra.Length > tamanhoPalavra)
             {
                 tamanhoPalavra = palavra.Length;
                 maiorPalavra = palavra;
